@@ -1,0 +1,223 @@
+:rooT {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+
+/*-----------------------
+ navigation bar style part
+ --------------------------- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+nav>ul {
+    display: flex;
+    list-style: none;
+}
+
+ul>li a {
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* ------------------
+banner part start
+------------------------ */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-details h1 {
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.banner-details p {
+    width: 80%;
+}
+
+.banner-details a {
+    text-decoration: none;
+    background-image: linear-gradient(tomato, purple);
+    color: white;
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+
+.banner-img img {
+    width: 100%;
+    background-color: aliceblue;
+    border: 1px solid aliceblue;
+    border-radius: 50%;
+}
+
+.banner-img:hover img {
+    transform: scale(1.1) rotate(5deg);
+    transition: transform 1s ease-in-out;
+}
+
+/* ---------------------------------------
+        LOGO part start
+    --------------------------------- */
+.logo-section {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* -------------------------------------
+            products part start
+----------------------------------------- */
+.collection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.products {
+    padding: 5px;
+    border: 1px solid lightgrey;
+    background-color: aliceblue;
+    box-shadow: 5px 10px 10px 5px gainsboro;
+}
+
+.product-title {
+    text-align: center;
+    font-weight: 900;
+}
+
+.product-img img {
+    width: 100%;
+}
+
+.product-detail h2 {
+    font-weight: 500;
+}
+
+.product-section span {
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.product-section span a {
+    text-decoration: none;
+    color: palevioletred;
+}
+
+/* ---------------------------
+        features style start
+------------------------------ */
+
+.feature {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 100px 0;
+}
+
+.feature-details a {
+    padding: 5px 20px;
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(tomato, purple);
+}
+
+.feature-img img {
+    width: 50%;
+}
+
+/* -----------------------------
+        footer style start here
+        -------------------------------- */
+footer {
+    background-color: rgb(24, 21, 21);
+    width: 100%;
+}
+
+.footer-section {
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: white;
+}
+
+/*-------------------------------------------
+            responsive /medeaqueries
+ ---------------------------------------------*/
+@media only screen and (max-width:600px) {
+    .banner {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner-details {
+        margin-bottom: 20px;
+    }
+
+    .logos {
+        display: block;
+    }
+
+    .collection {
+        display: block;
+    }
+
+    .products {
+        margin-bottom: 15px;
+    }
+
+    .feature {
+        display: block;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width:768) {
+    .banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logos {
+        display: flex;
+    }
+
+    .collection {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width:1200) {
+    .banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .collection {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+}
