@@ -160,6 +160,11 @@ footer {
     color: white;
 }
 
+.footer-style a i {
+    font-size: 40px;
+    margin: 16px;
+}
+
 /*-------------------------------------------
             responsive /medeaqueries
  ---------------------------------------------*/
